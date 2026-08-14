@@ -1,0 +1,859 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>MedCare — Healthcare You Can Trust</title>
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="preloader-inner">
+        <div class="pre-cross"><span></span><span></span></div>
+        <div class="pre-pulse">
+          <svg viewBox="0 0 200 60" preserveAspectRatio="none">
+            <polyline
+              class="pulse-line"
+              points="0,30 30,30 45,10 55,50 65,15 75,45 85,30 200,30"
+            />
+          </svg>
+        </div>
+        <p class="pre-text">
+          Loading MedCare<span class="dots"
+            ><span>.</span><span>.</span><span>.</span></span
+          >
+        </p>
+      </div>
+    </div>
+
+    <header id="home">
+      <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+          <a href="#home" class="nav-logo">
+            <div class="logo-icon"><i class="fa-solid fa-cross"></i></div>
+            <span>Med<strong>Care</strong></span>
+          </a>
+          <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#doctors" class="nav-link">Doctors</a></li>
+            <li><a href="#blogs" class="nav-link">Blogs</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="nav-actions">
+            <a href="#contact" class="btn btn-primary">Book Appointment</a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <div class="hero-bg">
+          <div class="hero-blob blob-1"></div>
+          <div class="hero-blob blob-2"></div>
+          <div class="hero-grid"></div>
+        </div>
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-badge">
+              <i class="fa-solid fa-shield-heart"></i>
+              Trusted by 15,000+ Patients
+            </div>
+            <h1>
+              We Provide <em>Medical</em> Services That You Can <em>Trust</em>
+            </h1>
+            <p>
+              Need professional help? Our expert doctors and support staff are
+              available 24/7. Visit us or schedule an appointment online today.
+            </p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary">
+                <i class="fa-regular fa-calendar-check"></i>
+                Get Appointment
+              </a>
+              <a href="#about" class="btn btn-ghost">
+                <i class="fa-solid fa-play"></i>
+                Learn More
+              </a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat">
+                <strong>120+</strong>
+                <span>Specialists</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat">
+                <strong>98%</strong>
+                <span>Satisfaction</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat">
+                <strong>24/7</strong>
+                <span>Support</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-card card-main">
+              <div class="hcard-avatar">
+                <div class="avatar-circle">
+                  <i class="fa-solid fa-user-doctor"></i>
+                </div>
+                <div class="avatar-status"></div>
+              </div>
+              <div class="hcard-info">
+                <strong>Dr. Sarah Mitchell</strong>
+                <span>Cardiologist · Online</span>
+              </div>
+              <div class="hcard-action">
+                <i class="fa-solid fa-video"></i>
+              </div>
+            </div>
+            <div class="hero-card card-stat">
+              <i class="fa-solid fa-heart-pulse"></i>
+              <div>
+                <strong>72 BPM</strong>
+                <span>Heart Rate</span>
+              </div>
+            </div>
+            <div class="hero-card card-appt">
+              <i class="fa-regular fa-clock"></i>
+              <div>
+                <strong>Next: 10:30 AM</strong>
+                <span>Appointment Today</span>
+              </div>
+            </div>
+            <div class="hero-rings">
+              <div class="ring ring-1"></div>
+              <div class="ring ring-2"></div>
+              <div class="ring ring-3"></div>
+              <div class="ring-core"><i class="fa-solid fa-plus"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-wave">
+          <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+            <path
+              d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z"
+              fill="#f8faff"
+            />
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual">
+            <div class="about-img-wrap">
+              <img
+                src="../imges/about-img.jpeg"
+                alt="Medical team"
+                class="about-img-real"
+              />
+              <div class="about-badge-float">
+                <i class="fa-solid fa-award"></i>
+                <div>
+                  <strong>ISO Certified</strong>
+                  <span>Healthcare Excellence</span>
+                </div>
+              </div>
+              <div class="about-exp-float">
+                <strong>25+</strong>
+                <span>Years of Excellence</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-content">
+            <div class="section-tag"><span></span>About Us</div>
+            <h2>Committed to <em>Exceptional</em> Patient Care</h2>
+            <p>
+              At MedCare, we believe that quality healthcare is a fundamental
+              right. Our state-of-the-art facilities and world-class team of
+              specialists are dedicated to delivering compassionate,
+              evidence-based care.
+            </p>
+            <div class="about-features">
+              <div class="about-feat">
+                <div class="feat-icon">
+                  <i class="fa-solid fa-microscope"></i>
+                </div>
+                <div>
+                  <strong>Advanced Diagnostics</strong>
+                  <p>
+                    Latest imaging and lab technology for accurate diagnosis.
+                  </p>
+                </div>
+              </div>
+              <div class="about-feat">
+                <div class="feat-icon">
+                  <i class="fa-solid fa-heart-circle-check"></i>
+                </div>
+                <div>
+                  <strong>Personalized Treatment</strong>
+                  <p>Care plans tailored to every patient's unique needs.</p>
+                </div>
+              </div>
+              <div class="about-feat">
+                <div class="feat-icon">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div>
+                  <strong>Safe Environment</strong>
+                  <p>
+                    Rigorous hygiene protocols and patient safety standards.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-primary"
+              >Book a Consultation <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item" data-target="120">
+            <div class="stat-icon"><i class="fa-solid fa-user-doctor"></i></div>
+            <div class="stat-num">
+              <span class="count">0</span><span>+</span>
+            </div>
+            <p>Expert Specialists</p>
+          </div>
+          <div class="stat-item" data-target="15000">
+            <div class="stat-icon">
+              <i class="fa-solid fa-heart-circle-check"></i>
+            </div>
+            <div class="stat-num">
+              <span class="count">0</span><span>+</span>
+            </div>
+            <p>Patients Treated</p>
+          </div>
+          <div class="stat-item" data-target="25">
+            <div class="stat-icon">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <div class="stat-num">
+              <span class="count">0</span><span>+</span>
+            </div>
+            <p>Years of Excellence</p>
+          </div>
+          <div class="stat-item" data-target="98">
+            <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
+            <div class="stat-num">
+              <span class="count">0</span><span>%</span>
+            </div>
+            <p>Satisfaction Rate</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><span></span>Our Services</div>
+          <h2>Comprehensive <em>Healthcare</em> Solutions</h2>
+          <p>
+            From preventive care to complex treatments, we offer a full spectrum
+            of medical services.
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card" data-delay="0">
+            <div
+              class="service-icon"
+              style="--icon-color: #1a7bd1; --icon-bg: #e8f3fd"
+            >
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <h3>Cardiology</h3>
+            <p>
+              Comprehensive heart care including diagnostics, treatment, and
+              cardiac rehabilitation programs.
+            </p>
+            <a href="#" class="service-link"
+              >Learn More <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="service-card" data-delay="100">
+            <div
+              class="service-icon"
+              style="--icon-color: #0ea472; --icon-bg: #e6f7f2"
+            >
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3>Neurology</h3>
+            <p>
+              Expert diagnosis and treatment for neurological disorders using
+              cutting-edge technology.
+            </p>
+            <a href="#" class="service-link"
+              >Learn More <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="service-card" data-delay="200">
+            <div
+              class="service-icon"
+              style="--icon-color: #e05c2a; --icon-bg: #fdf0ea"
+            >
+              <i class="fa-solid fa-bone"></i>
+            </div>
+            <h3>Orthopedics</h3>
+            <p>
+              Advanced joint replacement, sports medicine, and musculoskeletal
+              care services.
+            </p>
+            <a href="#" class="service-link"
+              >Learn More <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="service-card" data-delay="300">
+            <div
+              class="service-icon"
+              style="--icon-color: #7c3aed; --icon-bg: #f0eafd"
+            >
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <h3>Ophthalmology</h3>
+            <p>
+              Complete eye care from routine exams to LASIK and complex surgical
+              procedures.
+            </p>
+            <a href="#" class="service-link"
+              >Learn More <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="service-card" data-delay="400">
+            <div
+              class="service-icon"
+              style="--icon-color: #d4920e; --icon-bg: #fdf6e3"
+            >
+              <i class="fa-solid fa-baby"></i>
+            </div>
+            <h3>Pediatrics</h3>
+            <p>
+              Specialized care for infants, children, and adolescents in a
+              child-friendly environment.
+            </p>
+            <a href="#" class="service-link"
+              >Learn More <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="service-card" data-delay="500">
+            <div
+              class="service-icon"
+              style="--icon-color: #db2777; --icon-bg: #fde8f3"
+            >
+              <i class="fa-solid fa-stethoscope"></i>
+            </div>
+            <h3>General Medicine</h3>
+            <p>
+              Preventive care, health screenings, and treatment for a wide range
+              of conditions.
+            </p>
+            <a href="#" class="service-link"
+              >Learn More <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="doctors" class="doctors section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><span></span>Our Doctors</div>
+          <h2>Meet Our <em>Expert</em> Specialists</h2>
+          <p>
+            A dedicated team of board-certified physicians committed to your
+            wellbeing.
+          </p>
+        </div>
+        <div class="doctors-grid">
+          <div class="doctor-card">
+            <div class="doctor-img">
+              <img src="../imges/doctor-1.jpg" alt="Dr. Sarah Mitchell" />
+              <div class="doctor-overlay">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+            <div class="doctor-info">
+              <h3>Dr. Sarah Mitchell</h3>
+              <span class="doctor-specialty">Cardiologist</span>
+              <div class="doctor-meta">
+                <span><i class="fa-solid fa-star"></i> 4.9</span>
+                <span><i class="fa-solid fa-users"></i> 1.2k Patients</span>
+              </div>
+            </div>
+          </div>
+          <div class="doctor-card">
+            <div class="doctor-img">
+              <img src="../imges/doctor-2.jpg" alt="Dr. James Carter" />
+              <div class="doctor-overlay">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+            <div class="doctor-info">
+              <h3>Dr. James Carter</h3>
+              <span class="doctor-specialty">Neurologist</span>
+              <div class="doctor-meta">
+                <span><i class="fa-solid fa-star"></i> 4.8</span>
+                <span><i class="fa-solid fa-users"></i> 980 Patients</span>
+              </div>
+            </div>
+          </div>
+          <div class="doctor-card">
+            <div class="doctor-img">
+              <img src="../imges/doctor-3.avif" alt="Dr. Emily Chen" />
+              <div class="doctor-overlay">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+            <div class="doctor-info">
+              <h3>Dr. Emily Chen</h3>
+              <span class="doctor-specialty">Pediatrician</span>
+              <div class="doctor-meta">
+                <span><i class="fa-solid fa-star"></i> 5.0</span>
+                <span><i class="fa-solid fa-users"></i> 2.1k Patients</span>
+              </div>
+            </div>
+          </div>
+          <div class="doctor-card">
+            <div class="doctor-img">
+              <img
+                src="../imges/bg-home.jpg"
+                alt="Dr. Marcus Reid"
+                style="object-position: center top"
+              />
+              <div class="doctor-overlay">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+            <div class="doctor-info">
+              <h3>Dr. Marcus Reid</h3>
+              <span class="doctor-specialty">Orthopedic Surgeon</span>
+              <div class="doctor-meta">
+                <span><i class="fa-solid fa-star"></i> 4.7</span>
+                <span><i class="fa-solid fa-users"></i> 750 Patients</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="cta-bg">
+        <img src="../imges/info-bg.jpg" alt="" />
+        <div class="cta-overlay"></div>
+      </div>
+      <div class="container">
+        <div class="cta-inner">
+          <div class="cta-text">
+            <div class="cta-tag">
+              <i class="fa-solid fa-circle-exclamation"></i> 24/7 Emergency Care
+            </div>
+            <h2>Medical Emergency? <em>We're Here</em> Around the Clock</h2>
+            <p>
+              Our emergency department is fully staffed with specialists ready
+              to respond at any moment. Don't hesitate — every second counts.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <a href="tel:+18009110000" class="btn btn-white">
+              <i class="fa-solid fa-phone-volume"></i>
+              Call Emergency
+            </a>
+            <a href="#contact" class="btn btn-outline-white">
+              <i class="fa-regular fa-calendar-check"></i>
+              Book Appointment
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blogs" class="blogs section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><span></span>Health Blog</div>
+          <h2>Latest <em>Health</em> Insights</h2>
+          <p>
+            Expert articles and tips to help you live a healthier, happier life.
+          </p>
+        </div>
+        <div class="blogs-grid">
+          <div class="blog-card blog-card-featured">
+            <div class="blog-img">
+              <img src="../imges/blog-1.jpeg" alt="Heart Disease" />
+              <div class="blog-cat">Cardiology</div>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="fa-regular fa-calendar"></i> May 28, 2025</span>
+                <span><i class="fa-regular fa-clock"></i> 6 min read</span>
+              </div>
+              <h3>
+                10 Early Warning Signs of Heart Disease You Shouldn't Ignore
+              </h3>
+              <p>
+                Understanding the early symptoms can save your life. Our
+                cardiologists break down the key warning signals.
+              </p>
+              <a href="#" class="blog-link"
+                >Read Article <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-img">
+              <img src="../imges/blog-2.jpeg" alt="Anti-Inflammatory" />
+              <div class="blog-cat">Nutrition</div>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="fa-regular fa-calendar"></i> May 20, 2025</span>
+                <span><i class="fa-regular fa-clock"></i> 4 min read</span>
+              </div>
+              <h3>The Science of Anti-Inflammatory Eating</h3>
+              <p>
+                How the right diet can reduce chronic inflammation and improve
+                long-term health.
+              </p>
+              <a href="#" class="blog-link"
+                >Read Article <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-img">
+              <img src="../imges/blog-3.jpg" alt="Mental Health" />
+              <div class="blog-cat">Mental Health</div>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="fa-regular fa-calendar"></i> May 12, 2025</span>
+                <span><i class="fa-regular fa-clock"></i> 5 min read</span>
+              </div>
+              <h3>Managing Anxiety in a High-Stress World</h3>
+              <p>
+                Evidence-based strategies from our psychiatry team to help you
+                find balance and calm.
+              </p>
+              <a href="#" class="blog-link"
+                >Read Article <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials section">
+      <div class="testi-bg">
+        <img src="../imges/client-bg.jpg" alt="" />
+        <div class="testi-overlay"></div>
+      </div>
+      <div class="container" style="position: relative; z-index: 2">
+        <div class="section-header" style="--tag-color: #fff">
+          <div class="section-tag section-tag-white">
+            <span></span>Patient Stories
+          </div>
+          <h2 style="color: #fff">What Our <em>Patients</em> Say</h2>
+          <p style="color: rgba(255, 255, 255, 0.7)">
+            Real stories from real patients who trusted us with their health.
+          </p>
+        </div>
+        <div class="testi-grid">
+          <div class="testi-card" data-delay="0">
+            <div class="testi-quote">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <p>
+              "The care I received at MedCare was truly exceptional. The doctors
+              took the time to explain everything clearly and made me feel at
+              ease throughout my treatment."
+            </p>
+            <div class="testi-author">
+              <div
+                class="testi-avatar"
+                style="background: linear-gradient(135deg, #c6dcf5, #a8cfee)"
+              >
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div>
+                <strong>Emily Johnson</strong>
+                <span>Cardiology Patient</span>
+              </div>
+              <div class="testi-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card" data-delay="150">
+            <div class="testi-quote">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <p>
+              "From the moment I walked in, the staff was warm and professional.
+              My surgery went perfectly and recovery was faster than expected. I
+              couldn't be more grateful."
+            </p>
+            <div class="testi-author">
+              <div
+                class="testi-avatar"
+                style="background: linear-gradient(135deg, #d4f0e8, #a8ddcc)"
+              >
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div>
+                <strong>Robert Martinez</strong>
+                <span>Orthopedic Patient</span>
+              </div>
+              <div class="testi-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card" data-delay="300">
+            <div class="testi-quote">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <p>
+              "Dr. Emily Chen is absolutely wonderful with children. My daughter
+              was scared at first but left the clinic smiling. MedCare has
+              earned our family's trust forever."
+            </p>
+            <div class="testi-author">
+              <div
+                class="testi-avatar"
+                style="background: linear-gradient(135deg, #fce4ec, #f8bbd0)"
+              >
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div>
+                <strong>Sarah Williams</strong>
+                <span>Pediatrics Parent</span>
+              </div>
+              <div class="testi-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <img src="../imges/contact.jpg" alt="Contact" class="contact-img" />
+            <div class="section-tag"><span></span>Contact Us</div>
+            <h2>Get In <em>Touch</em> With Us</h2>
+            <p>
+              Whether you need to book an appointment, ask a question, or need
+              emergency support, we're here for you.
+            </p>
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <strong>Our Location</strong>
+                  <span>123 Health Avenue, Medical District, NY 10001</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <strong>Phone Number</strong>
+                  <span>+1 (800) 123-4567 · Emergency: +1 (800) 911-0000</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <strong>Email Address</strong>
+                  <span>info@medcare.com · support@medcare.com</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-regular fa-clock"></i>
+                </div>
+                <div>
+                  <strong>Working Hours</strong>
+                  <span>Mon–Fri: 8am–8pm · Sat–Sun: 9am–5pm</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-wrap">
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label>First Name</label>
+                  <input type="text" placeholder="John" />
+                </div>
+                <div class="form-group">
+                  <label>Last Name</label>
+                  <input type="text" placeholder="Doe" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="john@example.com" />
+              </div>
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="+1 (000) 000-0000" />
+              </div>
+              <div class="form-group">
+                <label>Department</label>
+                <select>
+                  <option value="">Select a department</option>
+                  <option>Cardiology</option>
+                  <option>Neurology</option>
+                  <option>Orthopedics</option>
+                  <option>Pediatrics</option>
+                  <option>General Medicine</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Message</label>
+                <textarea
+                  placeholder="Tell us about your concern..."
+                  rows="4"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                <i class="fa-regular fa-paper-plane"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="nav-logo">
+              <div class="logo-icon"><i class="fa-solid fa-cross"></i></div>
+              <span>Med<strong>Care</strong></span>
+            </a>
+            <p>
+              Providing trusted, compassionate healthcare to families for over
+              25 years.
+            </p>
+            <div class="footer-socials">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#doctors">Doctors</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#">Cardiology</a></li>
+              <li><a href="#">Neurology</a></li>
+              <li><a href="#">Pediatrics</a></li>
+              <li><a href="#">Orthopedics</a></li>
+              <li><a href="#">General Medicine</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>Get health tips and updates directly in your inbox.</p>
+            <div class="footer-newsletter">
+              <input type="email" placeholder="Your email" />
+              <button class="btn btn-primary">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 MedCare. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-inner">
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#doctors" class="nav-link">Doctors</a></li>
+          <li><a href="#blogs" class="nav-link">Blogs</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Book Appointment</a>
+      </div>
+    </div>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
